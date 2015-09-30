@@ -13,7 +13,7 @@ if (typeof require!= "undefined") {
 (function(factory) {
     
     if (typeof define == 'function' && define.amd) define(["jsyg-wrapper","jsyg-strutils"],factory);
-    else factory(JSYG);
+    else factory(JSYG,JSYG);
     
 }(function(JSYG,strUtils) {
 
