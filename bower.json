@@ -1,7 +1,7 @@
 {
     "name": "jsyg-strutils",
     "authors" : ["Yannick Bochatay"],
-    "description" : "String Utilitaries for JSYG framework or standalone",
+    "description" : "String utilitaries for JSYG framework or standalone",
     "main": "JSYG-strutils.js",
     "moduleType": [
         "amd",
@@ -20,10 +20,9 @@
     "license": "MIT",
     "ignore": ["**/.*","tests","bower_components","nbproject"],
     "keywords": [
-        "svg",
         "jsyg",
-        "jquery",
         "javascript",
-        "library"
+        "library",
+        "string"
     ]
 }

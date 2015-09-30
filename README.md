@@ -1,2 +1,2 @@
 # JSYG-strutils
-String Utilitaries for JSYG framework or standalone.
+String utilitaries for JSYG framework or standalone.

@@ -2,7 +2,7 @@ if (typeof require!= "undefined") {
     
     require.config({
         paths: {
-            "dep": '../JSYG.dep',
+            "jsyg-strutils": '../JSYG-strutils',
             "jquery":"../bower_components/jquery/dist/jquery",
             "jsyg-wrapper":"../bower_components/jsyg-wrapper/JSYG-wrapper"
         },
@@ -12,18 +12,19 @@ if (typeof require!= "undefined") {
 
 (function(factory) {
     
-    if (typeof define == 'function' && define.amd) define(["dep"],factory);
-    else factory(Dep);
+    if (typeof define == 'function' && define.amd) define(["jsyg-wrapper","jsyg-strutils"],factory);
+    else factory(JSYG);
     
-}(function(Dep) {
+}(function(JSYG,strUtils) {
 
-    module("dep");
+    module("strUtils");
 
-    test("Création d'un point", function() {     
-
+    test("fonctions diverses", function() {
+        
         expect(2);
-        equal(true,1,"abcisse");
-        equal(false,0,"ordonnée");
+        
+        equal( strUtils.camelize("toto_tata_titi"), "totoTataTiti" ,"camelize");
+        equal( strUtils.dasherize("totoTataTiti"), "toto-tata-titi" ,"camelize");
     });
     
 }));
