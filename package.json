@@ -1,6 +1,6 @@
 {
   "name": "jsyg-strutils",
-  "version": "0.5.5",
+  "version": "0.1.2",
   "description": "String utilitaries for JSYG framework or standalone",
   "main": "JSYG-strutils.js",
   "directories": {
