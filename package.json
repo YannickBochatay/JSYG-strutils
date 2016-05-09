@@ -1,0 +1,28 @@
+{
+  "name": "jsyg-strutils",
+  "version": "0.5.5",
+  "description": "String utilitaries for JSYG framework or standalone",
+  "main": "JSYG-strutils.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/YannickBochatay/JSYG-strutils.git"
+  },
+  "keywords": [
+    "svg",
+    "jquery",
+    "javascript",
+    "library"
+  ],
+  "author": "Yannick Bochatay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YannickBochatay/JSYG-utils/issues"
+  },
+  "homepage": "https://github.com/YannickBochatay/JSYG-utils#readme"
+}
