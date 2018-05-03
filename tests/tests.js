@@ -3,28 +3,34 @@ if (typeof require!= "undefined") {
     require.config({
         paths: {
             "jsyg-strutils": '../JSYG-strutils',
-            "jquery":"../bower_components/jquery/dist/jquery",
-            "jsyg-wrapper":"../bower_components/jsyg-wrapper/JSYG-wrapper"
+            "jquery":"../node_modules/jquery/dist/jquery",
+            "jsyg-wrapper":"../node_modules/jsyg-wrapper/JSYG-wrapper"
         },
         urlArgs: "bust=" + (+new Date())
     });
 }
 
+QUnit.config.autostart = false;
+
 (function(factory) {
     
-    if (typeof define == 'function' && define.amd) define(["jsyg-wrapper","jsyg-strutils"],factory);
-    else factory(JSYG,JSYG);
+    if (typeof define == 'function' && define.amd) require(["jsyg-wrapper","jsyg-strutils"],factory);
+    else if (typeof JSYG !== "undefined") factory(JSYG,JSYG);
     
 }(function(JSYG,strUtils) {
 
+    QUnit.start()
+
+    const { module, test } = QUnit
+
     module("strUtils");
 
-    test("fonctions diverses", function() {
+    test("fonctions diverses", assert => {
         
-        expect(2);
+        assert.expect(2);
         
-        equal( strUtils.camelize("toto_tata_titi"), "totoTataTiti" ,"camelize");
-        equal( strUtils.dasherize("totoTataTiti"), "toto-tata-titi" ,"camelize");
+        assert.equal( strUtils.camelize("toto_tata_titi"), "totoTataTiti" ,"camelize");
+        assert.equal( strUtils.dasherize("totoTataTiti"), "toto-tata-titi" ,"dasherize");
     });
     
 }));

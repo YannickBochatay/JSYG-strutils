@@ -1,6 +1,6 @@
 {
   "name": "jsyg-strutils",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "String utilitaries for JSYG framework or standalone",
   "main": "JSYG-strutils.js",
   "directories": {
@@ -24,5 +24,11 @@
   "bugs": {
     "url": "https://github.com/YannickBochatay/JSYG-utils/issues"
   },
-  "homepage": "https://github.com/YannickBochatay/JSYG-utils#readme"
+  "homepage": "https://github.com/YannickBochatay/JSYG-utils#readme",
+  "devDependencies": {
+    "jquery": "^3.3.1",
+    "jsyg-wrapper": "^1.0.0",
+    "qunit": "^2.6.0",
+    "requirejs": "^2.3.5"
+  }
 }
