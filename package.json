@@ -7,7 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "doc": "documentation readme JSYG-strutils.js --section=API"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
   },
   "homepage": "https://github.com/YannickBochatay/JSYG-utils#readme",
   "devDependencies": {
+    "documentation": "^14.0.3",
     "jquery": "^3.3.1",
     "jsyg-wrapper": "^1.0.0",
     "qunit": "^2.6.0",
