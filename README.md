@@ -2,6 +2,8 @@
 
 String utilitaries for JSYG framework or standalone.
 
+## ⚠️ Deprecated. Use [@jsyg/strutils](https://github.com/YannickBochatay/jsyg-monorepo/tree/main/packages/strutils) instead.
+
 ### Installation
 
 ```shell
